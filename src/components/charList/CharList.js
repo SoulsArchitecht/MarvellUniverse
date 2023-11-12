@@ -99,10 +99,11 @@ class CharList extends Component {
                 {errorMessage}
                 {spinner}
                 {content}
-                <button className="button button__main button__long"
-                disabled={newItemLoading}
-                style={{'display': charEnded ? 'none' : 'block'}}
-                onClick={() => this.onRequest(offset)}>
+                <button
+                    className="button button__main button__long"
+                    disabled={newItemLoading}
+                    style={{'display': charEnded ? 'none' : 'block'}}
+                    onClick={() => this.onRequest(offset)}>
                     <div className="inner">load more</div>
                 </button>
             </div>
